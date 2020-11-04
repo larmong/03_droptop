@@ -1,0 +1,945 @@
+/* main style */
+
+/* 전체초기화 */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; }
+li { list-style-type: none; }
+body { font-family: 'Noto Sans KR', sans-serif; color: #1E1E24; font-size: 16px; }
+html ,body {
+    width: 100%; height: 100%;
+}
+#wrap {
+width: 100%; 
+margin: 0 auto;
+overflow: hidden;
+}
+
+/* 
+    * icon font Awesome *
+    facebook : <i class="fab fa-facebook-f"></i>
+    twitter : <i class="fab fa-twitter"></i>
+    instagram : <i class="fab fa-instagram"></i>
+*/
+
+
+/* font */
+@font-face {
+    font-family:'COBAISSI';
+    src: url('../font/COBAISSI.otf');
+  }
+@font-face {
+    font-family:'Sandoll';
+    src: url('../font/Sandoll\ 국대떡볶이.otf');
+  }
+@font-face {
+    font-family:'Zapfino';
+    src: url('../font/ZapfinoExtraLT-One.otf');
+  }
+
+
+/* header */
+#main_header {
+    width: 100%; margin: 0 auto;
+    height: 100px;
+    background: 
+    linear-gradient(#1E1E24 102px,
+    #fff 20%, #fff);
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
+
+.main_header {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_header > .logo > a > img {
+    width: 165.92px;
+    margin-top: 38px;
+    float: left;
+}
+
+.gnb > .depth1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.gnb {
+    width: 1000px;
+    position: absolute;
+    top: 36px; left: 310px;
+    text-align: center;
+}
+.gnb > .depth1 > li {
+    float: left;
+    width: 146px; height: 61px;
+    position: relative;
+}
+
+.gnb > .depth1 > li > a {
+    color: #fff;
+}
+
+.gnb > .depth1 > li:hover {
+    border-bottom: 5px solid #FFBB00;
+}
+
+/* 2단계 */
+.gnb .depth2 {
+    width: 100%;
+    position: absolute;
+    padding-top: 50px;
+    font-size: 14px;
+}
+.gnb .depth2 > li {
+    white-space: nowrap;
+    margin-bottom: 21px;
+    width: 146px; height: 29px;
+}
+
+.gnb .depth2 > li:first-child {
+    margin-top: 30px;
+}
+
+.gnb .depth2 > li > a {
+    color: #1E1E24;
+}
+
+.gnb .depth2 > li > a:hover {
+    color: #FFBB00;
+    transition-duration: 0.3s;
+}
+
+/* main */
+#main {
+    width: 100%;
+    background-color: #1E1E24;
+
+}
+.main {
+    position: relative;
+    top: 100px;
+    width: 1200px; height: 925px;
+    /* background-color: #1E1E24; */
+    margin: 0 auto;
+}
+
+.main > .main_bg {
+    position: absolute;
+    left: -395px; top: -84px;
+    width: 1920px; height: 825px;
+}
+
+#visual {
+    position: relative;
+    width: 1200px; height: 725px;
+    /* border: 1px solid red; */
+}
+
+#visual > .visual_img > img {
+    width: 725px; height: 725px;
+    margin-left: 162px;
+}
+
+#visual > .visual_text_box {
+    position: absolute;
+    bottom: 27px; right: 29px;
+    width: 526px; height: 312px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#visual > .visual_square > .square_line {
+    position: absolute;
+    top: 0;
+    /* border: 1px solid red; */
+    width: 782.35px; height: 574px;
+}
+
+.square_line > .top_line {
+    width: 732px; height: 227px;
+    margin-left: 84.5px; margin-top: 24.5px;
+    border-top: 1px solid #fff; 
+    border-right: 1px solid #fff; 
+}
+.square_line > .left_line {
+    
+    width: 525.35px; height: 521px;
+    margin-left: 34.2px; margin-top: -174px;
+    border-left: 1px solid #fff; 
+    border-bottom: 1px solid #fff; 
+}
+
+#visual > .visual_text {
+    position: absolute;
+    bottom: 69px; right: 55px;
+    color: #fff;
+}
+
+#visual > .visual_text > h2 {
+    font-size: 80px;
+}
+#visual > .visual_text > h3 {
+    font-size: 20px;
+    padding-left: 9px;
+}
+#visual > .visual_text > p {
+    font-size: 14px;
+    padding-left: 9px;
+}
+
+#visual > .visual_more {
+    position: absolute;
+    bottom: 151px; right: 49px;
+}
+
+#visual > .visual_square {
+    position: absolute;
+    top: 27px; left: 32px;
+    width: 816.5px; height: 601px;
+    color: #fff;
+    /* border: 1px solid blue; */
+
+}
+
+#visual > .visual_square > h3 {
+    font-family:'Sandoll';
+    font-size: 53px;
+    margin-left: 19px;
+}
+#visual > .visual_square > .square_text {
+    position: absolute;
+    left: -15px;
+    width: 100px; height: 65px;
+    background-color: #1E1E24;
+    margin-top: 259px;
+}
+#visual > .visual_square > .square_text > h6 {
+    margin-top: 10px;
+    font-size: 7px;
+}
+#visual > .visual_square > .square_text > p {
+    font-size: 6px;
+}
+#visual > .visual_square > .square_sns {
+    position: absolute;
+    top: 527px; left: 20px;
+    width: 39px; height: 90px;
+    background-color: #1E1E24;
+}
+#visual > .visual_square > .square_sns > a {
+    color: #fff;
+}
+#visual > .visual_square > .square_sns > a > .fab {
+    width: 25px; height: 25px;
+    margin-left: 9px;
+}
+#visual > .visual_square > .square_sns > a > .fa-facebook-f {
+    margin-top: 23px;
+}
+
+#notice {
+    position: relative;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+
+#notice > .notice {
+    position: relative;
+    top: 36px; left: 111px;
+    width: 438.5px; height: 29px;
+}
+
+#notice > .notice > .notice_line {
+    width: 7.5px; height: 16px;
+    border-left: 3px solid #FFBB00;
+    margin-top: 7.5px;
+    float: left;
+}
+#notice > .notice > .notice_text {
+    color: #fff;
+}
+#notice > .notice > .notice_text > h2 {
+    font-size: 20px;
+    float: left;
+    padding-right: 17px;
+}
+#notice > .notice > .notice_text > p {
+    font-size: 12px;
+    padding-top: 6px;
+    float: left;
+}
+#notice > .notice > .notice_text > span {
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    padding-top: 8px;
+    color: #7C7C7C;
+}
+#notice > .event {
+    position: relative;
+    top: 7px; left: 650px;
+    width: 438.5px; height: 29px;
+}
+
+#notice > .event > .notice_line {
+    width: 7.5px; height: 16px;
+    border-left: 3px solid #FFBB00;
+    margin-top: 7.5px;
+    float: left;
+}
+#notice > .event > .notice_text {
+    color: #fff;
+}
+#notice > .event > .notice_text > h2 {
+    font-size: 20px;
+    float: left;
+    padding-right: 17px;
+}
+#notice > .event > .notice_text > p {
+    font-size: 12px;
+    padding-top: 6px;
+    float: left;
+}
+#notice > .event > .notice_text > span {
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    padding-top: 8px;
+    color: #7C7C7C;
+}
+
+/* content */
+#content {
+    width: 100%;
+}
+
+/* best */
+#best {
+    width: 100%;
+    background-color: #fff;
+}
+
+.best {
+    position: relative;
+    width: 1200px; height: 550px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.best > .title {
+    position: absolute;
+    top: 87px; left: 460px;
+    width: 260px; height: 55.48px;
+}
+.best > .title > h2 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    padding-left: 55px;
+    float: left;
+}
+.best > .title > h3 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    color: #FFBB00;
+    padding-left: 125px;
+}
+.best > .title > p {
+    font-size: 12px;
+    clear: both;
+}
+
+.best > .best_list {
+    width: 1200px; height: 248px;
+    padding-top: 209px;
+    margin: 0 auto;
+}
+
+.best > .best_list > .menu {
+    width: 195px; height: 248px;
+    text-align: center;
+    float: left;
+    margin-right: 55px;
+}
+.best > .best_list > .menu:last-child {
+    margin-right: 0px;
+}
+.best > .best_list > .menu > a > img {
+    width: 195px; height: 195px;
+    border-radius: 50%;
+}
+.best > .best_list > .menu > h2 {
+    margin-top: 18px;
+    font-size: 16px;
+}
+.best > .best_list > .menu > p {
+    font-size: 10px;
+    font-family:'COBAISSI';
+}
+
+/* membership */
+#membership {
+    width: 100%;
+    background-color: #1E1E24;
+}
+
+.membership {
+    position: relative;
+    width: 1200px; height: 300px;
+    background-color: #1E1E24;
+    margin: 0 auto;
+}
+
+.membership > .membership_img > img {
+    position: absolute;
+    top: 40px; left: 100px;
+    width: 450px; height: 220px;
+}
+
+.membership > .membership_text {
+    position: absolute;
+    top: 72px; right: 0;
+    width: 595px; height: 157px;
+    color: #fff;
+}
+
+.membership > .membership_text > .membership_title {
+    font-family:'COBAISSI';
+    font-size: 30px;
+}
+
+.membership > .membership_text > .membership_title > .membership_t1 {
+    float: left;
+}
+
+.membership > .membership_text > .membership_title > .membership_t2 {
+    display: inline;
+    color: #FFBB00;
+    padding-left: 10px;
+}
+
+.membership > .membership_text > .membership_span {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.membership > .membership_btn {
+    position: absolute;
+    top: 198px; right: 481.6px;
+    width: 118px; height: 31px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 31px;
+}
+.membership > .membership_btn > a {
+    color: #1E1E24;
+    font-size: 13px;
+}
+
+/* franchise */
+#franchise {
+    width: 100%;
+    background-color: #1E1E24;
+}
+
+.franchise {
+    position: relative;
+    width: 1200px; height: 300px;
+    background-color: #1E1E24;
+    margin: 0 auto;
+}
+
+.franchise > .franchise_img > img {
+    position: absolute;
+    top: 40px; right: 100px;
+    width: 450px; height: 220px;
+}
+
+.franchise > .franchise_text {
+    position: absolute;
+    top: 72px; left: 129px;
+    width: 471px; height: 157px;
+    color: #fff;
+}
+
+.franchise > .franchise_text > .franchise_title {
+    position: absolute;
+    left: 144px;
+    font-family:'COBAISSI';
+    font-size: 30px;
+}
+
+.franchise > .franchise_text > .franchise_title > .franchise_t1 {
+    float: left;
+}
+
+.franchise > .franchise_text > .franchise_title > .franchise_t2 {
+    display: inline;
+    color: #FFBB00;
+    padding-left: 10px;
+}
+
+.franchise > .franchise_text > .franchise_span {
+    margin-top: 50px;
+    font-size: 14px;
+    text-align: right;
+}
+.franchise > .franchise_btn {
+    position: absolute;
+    top: 198px; left: 482px;
+    width: 118px; height: 31px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 31px;
+}
+.franchise > .franchise_btn > a {
+    color: #1E1E24;
+    font-size: 13px;
+}
+
+/* new */
+#new {
+    width: 100%;
+    background-color: #fff;
+}
+
+.new {
+    position: relative;
+    width: 1200px; height: 550px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.new > .title {
+    position: absolute;
+    top: 87px; left: 460px;
+    width: 260px; height: 55.48px;
+}
+.new > .title  > h2 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    padding-left: 55px;
+    float: left;
+}
+.new > .title  > h3 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    color: #FFBB00;
+    padding-left: 125px;
+}
+.new > .title > p {
+    font-size: 12px;
+    clear: both;
+}
+
+.new > .new_list {
+    width: 1200px; height: 248px;
+    padding-top: 209px;
+    margin: 0 auto;
+}
+
+.new > .new_list > .menu {
+    width: 195px; height: 248px;
+    text-align: center;
+    float: left;
+    margin-right: 55px;
+}
+.new > .new_list > .menu:last-child {
+    margin-right: 0px;
+}
+.new > .new_list > .menu > a > img {
+    width: 195px; height: 195px;
+    border-radius: 50%;
+}
+.new > .new_list > .menu > h2 {
+    margin-top: 18px;
+    font-size: 16px;
+}
+.new > .new_list > .menu > p {
+    font-size: 10px;
+    font-family:'COBAISSI';
+}
+
+/* dessert */
+#dessert {
+    width: 100%;
+    background-color: #fff;
+}
+
+.dessert {
+    position: relative;
+    width: 1200px; height: 550px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.dessert > .title {
+    position: absolute;
+    top: 87px; left: 460px;
+    width: 260px; height: 55.48px;
+}
+.dessert > .title  > h2 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    padding-left: 30px;
+    float: left;
+}
+.dessert > .title  > h3 {
+    font-family:'COBAISSI';
+    font-size: 26px;
+    color: #FFBB00;
+    padding-left: 155px;
+}
+.dessert > .title > p {
+    font-size: 12px;
+    clear: both;
+}
+
+.dessert > .dessert_list {
+    width: 980px; height: 470px;
+    margin: 0 auto;
+    padding-top: 209px;
+}
+
+.dessert > .dessert_list > .menu {
+    width: 290px; height: 286px;
+    text-align: center;
+    float: left;
+    margin-right: 55px;
+}
+.dessert > .dessert_list > .menu:last-child {
+    margin-right: 0px;
+}
+.dessert > .dessert_list > .menu > a > img {
+    width: 290px; height: 230px;
+}
+.dessert > .dessert_list > .menu > h2 {
+    margin-top: 18px;
+    font-size: 16px;
+}
+.dessert > .dessert_list > .menu > p {
+    font-size: 10px;
+    font-family:'COBAISSI';
+}
+
+/* store */
+#store {
+    width: 100%;
+    background-color: #1E1E24;
+}
+
+.store {
+    position: relative;
+    width: 1200px; height: 600px;
+    background-color: #1E1E24;
+    margin: 0 auto;
+}
+.store > .healing {
+    width: 750px; height: 455px;
+    float: left;
+}
+.store > .healing > a > img {
+    width: 750px; height: 455px;
+    margin-top: 73px;
+}
+
+.store > .healing > .healing_text {
+    position: absolute;
+    top: 255px; left: 55px;
+    width: 640px; height: 135px;
+    /* border: 1px solid red; */
+}
+.store > .healing > .healing_text > p {
+    font-family:'Zapfino';
+    font-size: 101px;
+    line-height: 135px;
+    color: #fff;
+}
+
+.store > .healing > span {
+    width: 400px; height: 20px;
+    position: absolute;
+    top: 360px; left: 299px;
+    font-size: 14px;
+    color: #fff;
+}
+.store > .cafe {
+    width: 410px; height: 455px;
+    float: left;
+
+}
+.store > .cafe > a > img {
+    width: 410px; height: 455px;
+    margin-top: 73px;
+    margin-left: 40px;
+}
+
+.store > .cafe > .cafe_text {
+    position: absolute;
+    top: 171px; right: 19px;
+    color: #fff;
+    text-align: center;
+}
+
+.store > .cafe > .cafe_text > p {
+    font-size: 18px;
+}
+.store > .cafe > .cafe_text > span {
+    font-family:'Zapfino';
+    font-size: 89px;
+    display: block;
+    padding-top: 20px;
+}
+.store > .cafe > .cafe_btn {
+    position: absolute;
+    top: 408px; right: 146px;
+    width: 118px; height: 31px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 31px;
+}
+
+.store > .cafe > .cafe_btn > a {
+    color: #1E1E24;
+}
+
+/* droptop_m */
+#droptop_m {
+    width: 100%;
+    background-color: #fff;
+}
+
+.droptop_m {
+    position: relative;
+    width: 1200px; height: 950px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.droptop_m > .m_logo { text-align: center; }
+.droptop_m > .m_logo > img {
+    width: 438.77px;
+    margin-top: 30px;
+}
+
+.droptop_m > .m_logo > p {
+    position: absolute;
+    top: 180px; left: 595px;
+}
+
+
+.droptop_m > .m_img {
+    position: absolute;
+    width: 1065px; height: 457.82px;
+    bottom: 0; left: 68px;
+}
+
+.droptop_m > .m_img > img {
+    width: 1065px; height: 457.82px;
+}
+
+.droptop_m > .m_img > .m_imgtext {
+    position: absolute;
+    top: 119px; right: 0;
+    width: 300px; height: 90px;
+    text-align: center;
+}
+.droptop_m > .m_img > .m_imgtext > h2 {
+    font-size: 32px;
+}
+.droptop_m > .m_img > .m_imgtext > p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* info */
+#m_text { 
+    margin-top: 80px; 
+}
+.m_text1 {
+    position: relative;
+    width: 353px; height: 55px;
+    /* border: 1px solid red; */
+    float: left;
+}
+.m_text1 > .mtext_bg {
+    width: 38.96px; height: 38.96px;
+    background-color: #99A4CE;
+    margin-left: 14px;
+}
+.m_text1 > .mtext_img > img {
+    position: absolute;
+    top: 9.3px; left: 0;
+    width: 29.38px;
+}
+.m_text1 > .mtext_info {
+    position: absolute;
+    top: 0; left: 62px;
+    padding-left: 10px;
+    width: 270px; height: 55px;
+}
+.m_text1 > .mtext_info > h2 {
+    font-size: 14px;
+}
+.m_text1 > .mtext_info > p {
+    font-size: 8px;
+}
+
+.m_text2 {
+    position: relative;
+    width: 307px; height: 55px;
+    /* border: 1px solid red; */
+    float: left;
+}
+.m_text2 > .mtext_bg {
+    width: 38.96px; height: 38.96px;
+    background-color: #99A4CE;
+    margin-left: 14px;
+}
+.m_text2 > .mtext_img > img {
+    position: absolute;
+    top: 9.3px; left: 0;
+    width: 31.29px;
+}
+.m_text2 > .mtext_info {
+    position: absolute;
+    top: 0; left: 62px;
+    padding-left: 10px;
+    width: 270px; height: 55px;
+}
+.m_text2 > .mtext_info > h2 {
+    font-size: 14px;
+}
+.m_text2 > .mtext_info > p {
+    font-size: 8px;
+}
+
+.m_text3 {
+    position: relative;
+    width: 320px; height: 55px;
+    /* border: 1px solid red; */
+    float: left;
+}
+.m_text3 > .mtext_bg {
+    width: 38.96px; height: 38.96px;
+    background-color: #99A4CE;
+    margin-left: 14px;
+}
+.m_text3 > .mtext_img > img {
+    position: absolute;
+    top: 9.3px; left: 0;
+    width: 29.95px;
+}
+.m_text3 > .mtext_info {
+    position: absolute;
+    top: 0; left: 62px;
+    padding-left: 10px;
+    width: 270px; height: 55px;
+}
+.m_text3 > .mtext_info > h2 {
+    font-size: 14px;
+}
+.m_text3 > .mtext_info > p {
+    font-size: 8px;
+}
+
+.m_text4 {
+    position: relative;
+    width: 220px; height: 55px;
+    /* border: 1px solid red; */
+    float: left;
+}
+.m_text4 > .mtext_bg {
+    width: 38.96px; height: 38.96px;
+    background-color: #99A4CE;
+    margin-left: 14px;
+}
+.m_text4 > .mtext_img > img {
+    position: absolute;
+    top: 9.3px; left: 0;
+    width: 33.48px;
+}
+.m_text4 > .mtext_info {
+    position: absolute;
+    top: 0; left: 62px;
+    padding-left: 10px;
+    width: 180px; height: 55px;
+}
+.m_text4 > .mtext_info > h2 {
+    font-size: 14px;
+}
+.m_text4 > .mtext_info > p {
+    font-size: 8px;
+}
+
+/* footer */
+#main_footer {
+    clear: both;
+    width: 100%;
+    background-color: #1E1E24;
+}
+
+.main_footer {
+    position: relative;
+    width: 1200px; height: 200px;
+    background-color: #1E1E24;
+    margin: 0 auto;
+}
+
+.main_footer > .footer_logo {
+    position: absolute;
+    left: 0; top: 66px;
+}
+
+.main_footer > .footer_logo > a > img {
+    width: 143.15px; height: 67.06px;
+    opacity: 0.4;
+}
+.main_footer > .footer_text {
+    position: absolute;
+    left: 297px; top: 57px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.main_footer > .footer_text > .footer_text_1 {
+    width: 462px; height: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main_footer > .footer_text > .footer_text_1 > p {
+    float: left;
+    opacity: 0.4;
+}
+
+.main_footer > .footer_text > .footer_text_1 > .strong {
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    display: block;
+    opacity: 1;
+}
+
+.main_footer > .footer_text > .footer_text_2 {
+    clear: both;
+    margin-top: 5px;
+    opacity: 0.4;
+}
+.main_footer > .footer_text > .Copy {
+    margin-top: 10px;
+    opacity: 0.4;
+}
+
+.main_footer > .footer_right {
+    position: absolute;
+    right: 0; top: 56px;
+}
+
+.main_footer > .footer_right > img {
+    width: 116.75px; height: 87.49px;
+    opacity: 0.4;
+}
